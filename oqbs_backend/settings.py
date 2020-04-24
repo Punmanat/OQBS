@@ -25,9 +25,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '234^r(&n1p$!h@-&4wfzt&2qy5_zsx9cb!d3g&_y7e2=^2%65%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    '127.0.0.1',
+    'localhost'
+]
 
 # Application definition
 
@@ -81,10 +85,10 @@ WSGI_APPLICATION = 'oqbs_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'oqbs',
-        'HOST': '127.0.0.1',
+        'NAME': 'barber',
+        'HOST': 'barberdb.cqgybchirpcy.us-east-1.rds.amazonaws.com',
         'USER': 'root',
-        'PASSWORD': 'error101pt',
+        'PASSWORD': '12345678',
         'PORT': '3306',
     }
 }
