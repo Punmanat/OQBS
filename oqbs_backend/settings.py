@@ -87,7 +87,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'barber',
-        'HOST': 'oqbsdb.cqgybchirpcy.us-east-1.rds.amazonaws.com',
+        'HOST': 'oqbs-db.cqgybchirpcy.us-east-1.rds.amazonaws.com',
         'USER': 'root',
         'PASSWORD': '12345678',
         'PORT': '3306',
